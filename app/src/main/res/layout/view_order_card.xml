@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vOrderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="编号：00000000"
+        android:textColor="#8E93A3"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="伟仕小贷"
+        android:textColor="#4177F8"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vOrderNo" />
+
+    <ImageView
+        android:id="@+id/vCardBackground"
+        android:layout_width="274dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="卡片背景"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bj_yuqi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vOrderType" />
+
+    <TextView
+        android:id="@+id/vCardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="贷款金额"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/vCardBackground"
+        app:layout_constraintStart_toStartOf="@+id/vCardBackground"
+        app:layout_constraintTop_toTopOf="@+id/vCardBackground" />
+
+    <TextView
+        android:id="@+id/vLoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/vCardBackground"
+        app:layout_constraintStart_toStartOf="@+id/vCardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/vCardTitle"/>
+
+    <TextView
+        android:id="@+id/vDueTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/vCardBackground"
+        app:layout_constraintStart_toStartOf="@+id/vCardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/vLoanAmount"
+        tools:text="距还款还有：10天（含展期）" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vIconGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.333" />
+
+    <TextView
+        android:id="@+id/vDailyRateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="日利率"
+        android:textColor="#6E727D"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vIconGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/vCardBackground" />
+
+    <TextView
+        android:id="@+id/vDailyRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textColor="#AEB4C7"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/vDailyRateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/vDailyRateTitle" />
+
+    <ImageView
+        android:id="@+id/vDailyRateIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:contentDescription="图标"
+        android:src="@drawable/index_rililv"
+        app:layout_constraintEnd_toStartOf="@+id/vDailyRateTitle"
+        app:layout_constraintTop_toTopOf="@+id/vDailyRateTitle" />
+
+    <TextView
+        android:id="@+id/vLoanDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="放款日"
+        android:textColor="#6E727D"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vDailyRateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/vDailyRate" />
+
+    <TextView
+        android:id="@+id/vLoanDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1970.01.01"
+        android:textColor="#AEB4C7"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/vDailyRateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/vLoanDateTitle" />
+
+    <ImageView
+        android:id="@+id/vLoanDateIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="图标"
+        android:src="@drawable/index_fangkuanri"
+        app:layout_constraintEnd_toEndOf="@+id/vDailyRateIcon"
+        app:layout_constraintTop_toTopOf="@+id/vLoanDateTitle" />
+
+
+    <TextView
+        android:id="@+id/vDueDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="还款日"
+        android:textColor="#6E727D"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/vDailyRateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/vLoanDate" />
+
+    <TextView
+        android:id="@+id/vDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1970.01.01"
+        android:textColor="#AEB4C7"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/vDailyRateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/vDueDateTitle" />
+
+    <ImageView
+        android:id="@+id/vDueDateIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="图标"
+        android:src="@drawable/index_huankuanri"
+        app:layout_constraintEnd_toEndOf="@+id/vDailyRateIcon"
+        app:layout_constraintTop_toTopOf="@+id/vDueDateTitle" />
+
+    <Button
+        android:id="@+id/vToDetails"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shape_corner_primary"
+        android:text="查看"
+        android:textColor="@color/textPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vDueDate" />
+
+
+</android.support.constraint.ConstraintLayout>

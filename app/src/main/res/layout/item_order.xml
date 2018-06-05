@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="#F0F0F0">
+
+    <View
+        android:id="@+id/vCardBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vOrderTypeIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="17dp"
+        android:contentDescription="ICON"
+        android:src="@drawable/index_rililv"
+        app:layout_constraintLeft_toLeftOf="@+id/vCardBackground"
+        app:layout_constraintTop_toTopOf="@+id/vCardBackground" />
+
+    <TextView
+        android:id="@+id/vOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="伟仕小贷"
+        android:textColor="@color/textDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vOrderTypeIcon"
+        app:layout_constraintLeft_toRightOf="@+id/vOrderTypeIcon"
+        app:layout_constraintTop_toTopOf="@+id/vOrderTypeIcon" />
+
+    <ImageView
+        android:id="@+id/vOrderStateBadge"
+        android:layout_width="49dp"
+        android:layout_height="60dp"
+        android:contentDescription="条幅"
+        android:src="@drawable/shenhezhong"
+        app:layout_constraintRight_toRightOf="@+id/vCardBackground"
+        app:layout_constraintTop_toTopOf="@+id/vCardBackground" />
+
+    <TextView
+        android:id="@+id/vLoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="21dp"
+        android:text="N/A"
+        android:textColor="#FF811E"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/vCardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/vOrderTypeIcon" />
+
+    <TextView
+        android:id="@+id/vLoanAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="申请金额"
+        android:textColor="@color/text"
+        app:layout_constraintLeft_toLeftOf="@+id/vLoanAmount"
+        app:layout_constraintTop_toBottomOf="@+id/vLoanAmount" />
+
+    <View
+        android:id="@+id/vLoanAmountDivider"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:background="#EDEDED"
+        app:layout_constraintBottom_toBottomOf="@+id/vLoanAmountTitle"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmount" />
+
+    <TextView
+        android:id="@+id/vLoanDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="1970-01-01"
+        android:textColor="@color/textDark"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/vLoanAmountDivider"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmount" />
+
+    <TextView
+        android:id="@+id/vLoanDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请时间"
+        android:textColor="@color/text"
+        app:layout_constraintLeft_toLeftOf="@+id/vLoanDate"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmountTitle" />
+
+    <TextView
+        android:id="@+id/vOrderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:text="编号：00000000"
+        android:textColor="#BFC5CE"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/vCardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/vLoanAmountTitle" />
+
+    <TextView
+        android:id="@+id/vLender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:text="申请提交人：XXXX"
+        android:textColor="#BFC5CE"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="@+id/vCardBackground"
+        app:layout_constraintTop_toTopOf="@+id/vOrderNo" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/vCardBackground"
+        app:layout_constraintRight_toRightOf="@+id/vCardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/vOrderNo" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/vCardBackground"
+        app:layout_constraintLeft_toLeftOf="@id/vCardBackground"
+        app:layout_constraintRight_toRightOf="@id/vCardBackground"
+        app:layout_constraintTop_toTopOf="@id/vCardBackground" />
+
+</android.support.constraint.ConstraintLayout>

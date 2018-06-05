@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+
+    <Space
+        android:id="@+id/vToolbarBackground"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="伟仕小贷"
+        android:textColor="#322F2F"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vToolbarBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vToolbarBackground" />
+
+    <ImageView
+        android:id="@+id/vToOrderList"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="所有订单"
+        android:padding="8dp"
+        android:src="@drawable/rectanglecopy3"
+        app:layout_constraintBottom_toBottomOf="@+id/vToolbarBackground"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vToolbarBackground" />
+
+    <View
+        android:id="@+id/vToolbarBottomBorder"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"
+        app:layout_constraintTop_toBottomOf="@+id/vToolbarBackground" />
+
+    <View
+        android:id="@+id/vOrderListBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F0F0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vToolbarBottomBorder" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vOrderList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:clipChildren="false"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vToolbarBottomBorder"
+        tools:listitem="@layout/view_order_card" />
+
+</android.support.constraint.ConstraintLayout>

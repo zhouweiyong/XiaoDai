@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7FCFF"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vDividerAsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3EDF7" />
+
+    <TextView
+        android:id="@+id/vOrderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="9dp"
+        android:text="贷款编号：    00000000"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowOrderNo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vProductType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="申请产品：    XXXX"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowProductType"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vLoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="申请金额：    N/A"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vRepaymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="完结本息：    N/A"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowRepaymentAmount"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vLender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="申  请  人：    XXXX"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowLender"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vApplicationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="申请时间：    1970-01-01"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowApplicationDate"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vLoanDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="放款时间：    1970-01-01"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowLoanDate"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vOverdueDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="是否逾期：    N/A"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowOverdueDays"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vFineForOverdue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="逾期罚息：    N/A"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowFineForOverdue"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <TextView
+        android:id="@+id/vCompletionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7dp"
+        android:text="完结时间：    1970/01/01"
+        android:textColor="#444F5A"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/vDividerBelowCompletionDate"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="#E4E7E8" />
+
+    <View
+        android:id="@+id/vDividerAsFooter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="-1dp"
+        android:background="#E4E7E8" />
+</LinearLayout>

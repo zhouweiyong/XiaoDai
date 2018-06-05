@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/vHeadBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_details_head_background_height"
+        android:contentDescription="渐变色背景"
+        android:src="@drawable/shape_bg_warning" />
+
+    <ImageView
+        android:id="@+id/vToolbarNavigation"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="6dp"
+        android:contentDescription="返回按钮"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/angle_left"
+        app:layout_constraintTop_toTopOf="@+id/vHeadBackground" />
+
+    <TextView
+        android:id="@+id/vToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="订单贷"
+        android:textColor="@color/background"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vToolbarNavigation" />
+
+    <TextView
+        android:id="@+id/vDailyRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="0.00"
+        android:textColor="@color/background"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vToolbarTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:text="%"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/vDailyRate"
+        app:layout_constraintLeft_toRightOf="@+id/vDailyRate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="日利率"
+        android:textColor="#BFC5CE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vHeadBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/vLoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="N/A"
+        android:textColor="#1A1A1A"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/vRemainingDays"
+        app:layout_constraintTop_toBottomOf="@+id/vHeadBackground" />
+
+    <TextView
+        android:id="@+id/vLoanAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="借款金额(万)"
+        android:textColor="#BFC5CE"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/vLoanAmount"
+        app:layout_constraintRight_toRightOf="@+id/vLoanAmount"
+        app:layout_constraintTop_toBottomOf="@+id/vLoanAmount" />
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shape_corner_danger"
+        app:layout_constraintRight_toLeftOf="@+id/vLoanAmount"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmount" />
+
+    <View
+        android:id="@+id/vLoanAmountDivider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:background="#EDEDED"
+        app:layout_constraintBottom_toBottomOf="@+id/vLoanAmountTitle"
+        app:layout_constraintLeft_toRightOf="@+id/vLoanAmount"
+        app:layout_constraintRight_toLeftOf="@+id/vRemainingDays"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmount" />
+
+    <TextView
+        android:id="@+id/vRemainingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textColor="#1A1A1A"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toRightOf="@+id/vLoanAmount"
+        app:layout_constraintRight_toLeftOf="@+id/vRepaymentAmount"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmount" />
+
+    <TextView
+        android:id="@+id/vRemainingDaysTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="距离还款(天)"
+        android:textColor="#BFC5CE"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/vRemainingDays"
+        app:layout_constraintRight_toRightOf="@+id/vRemainingDays"
+        app:layout_constraintTop_toBottomOf="@+id/vRemainingDays" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#EDEDED"
+        app:layout_constraintBottom_toBottomOf="@+id/vLoanAmountDivider"
+        app:layout_constraintLeft_toRightOf="@+id/vRemainingDays"
+        app:layout_constraintRight_toLeftOf="@+id/vRepaymentAmount"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmountDivider" />
+
+    <TextView
+        android:id="@+id/vRepaymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textColor="#1A1A1A"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toRightOf="@+id/vRemainingDays"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vLoanAmount" />
+
+    <TextView
+        android:id="@+id/vRepaymentAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应还本息(万)"
+        android:textColor="#BFC5CE"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/vRepaymentAmount"
+        app:layout_constraintRight_toRightOf="@+id/vRepaymentAmount"
+        app:layout_constraintTop_toBottomOf="@+id/vRepaymentAmount" />
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/shape_corner_waring"
+        app:layout_constraintRight_toLeftOf="@+id/vRepaymentAmount"
+        app:layout_constraintTop_toTopOf="@+id/vRepaymentAmount" />
+
+    <View
+        android:id="@+id/vDividerBelowLoanInfo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toBottomOf="@+id/vLoanAmountTitle" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vDividerBelowLoanInfo">
+
+        <include layout="@layout/view_order_details_table" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

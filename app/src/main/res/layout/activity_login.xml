@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:background="@drawable/group6" />
+
+    <ImageView
+        android:id="@+id/logo_al"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:src="@drawable/logodenglu" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_name_al"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/logo_al"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp">
+
+        <ImageView
+            android:id="@+id/icon_name_al"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zhanghao" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/icon_name_al"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColorHint"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_E4E9F1" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlyt_pwd_al"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/rlyt_name_al"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp">
+
+        <ImageView
+            android:id="@+id/icon_pwd_al"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mima" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/icon_pwd_al"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColorHint"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_E4E9F1" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_al"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rlyt_pwd_al"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/button_solid_blue_circle"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_al"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="72dp">
+
+        <TextView
+            android:id="@+id/btn_saoma_al"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="扫码登录"
+            android:textColor="@color/color_5C8CFF"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toLeftOf="@+id/btn_saoma_al"
+            android:background="@color/color_F0F0F0"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toRightOf="@+id/btn_saoma_al"
+            android:background="@color/color_F0F0F0"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

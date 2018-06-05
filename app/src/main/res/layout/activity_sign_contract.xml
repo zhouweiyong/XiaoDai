@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_asc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.vstecs.xiaodai.common.ContractTitle
+        android:id="@+id/title_asc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf_asc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@mipmap/shadow_style2" />
+
+        <com.vstecs.xiaodai.common.SolidButton
+            android:id="@+id/btn_sign_asc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="19dp"
+            android:text="签署合同" />
+
+        <com.vstecs.xiaodai.common.HollowButton
+            android:id="@+id/btn_nosign_asc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="13dp"
+            android:text="暂不签署" />
+    </LinearLayout>
+
+</LinearLayout>

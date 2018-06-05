@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#5C8CFF</color>
+    <color name="primaryDark">#3845E2</color>
+    <color name="primaryLight">#86ACFF</color>
+    <color name="text">#6E727D</color>
+    <color name="textDark">#322F2F</color>
+    <color name="textLight">#798189</color>
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="background">#FFFFFF</color>
+    <color name="danger">#FF4C10</color>
+    <color name="success">#56D04D</color>
+    <color name="warning">#F6BE00</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="textColorHint">#798189</color>
+    <color name="textColor">#322F2F</color>
+    <color name="color_E4E9F1">#E4E9F1</color>
+    <color name="color_5C8CFF">#5C8CFF</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_ADC5FF">#ADC5FF</color>
+    <color name="color_4A4A4A">#4A4A4A</color>
+    <color name="color_162751">#162751</color>
+    <color name="color_FF4608">#FF4608</color>
+    <color name="color_F4F6F7">#F4F6F7</color>
+</resources>

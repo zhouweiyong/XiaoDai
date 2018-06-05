@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dialog_bg"
+    android:paddingBottom="25dp">
+
+    <ImageView
+        android:id="@+id/btn_cancel_dcc"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/guabi" />
+
+    <TextView
+        android:id="@+id/tv_title_dcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cancel_dcc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="您的订单已保存"
+        android:textColor="@color/color_4A4A4A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content_dcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_dcc"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="13dp"
+        android:text="您的借款申请已经保存到订单列表中,您可以在订单-进行中订单查看,一天内未签署合同该订单将失效." />
+    <com.vstecs.xiaodai.common.SolidButton
+        android:id="@+id/btn_comfirm_dcc"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_content_dcc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="好的" />
+</RelativeLayout>

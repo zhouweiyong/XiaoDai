@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/color_5C8CFF">
+
+    <ImageView
+        android:id="@+id/btn_left_lct"
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/angle_left" />
+
+    <TextView
+        android:id="@+id/tv_title_lct"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="标题"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_order_lct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_left_lct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_one_lct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/oval_bg_select"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/color_ADC5FF"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_one_lct"
+            android:layout_width="101dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_one_lct"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_two_lct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/view_one_lct"
+            android:background="@drawable/oval_bg_normal"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/color_5C8CFF"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_two_lct"
+            android:layout_width="101dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_two_lct"
+            android:background="@color/color_ADC5FF" />
+
+        <TextView
+            android:id="@+id/tv_three_lct"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/view_two_lct"
+            android:background="@drawable/oval_bg_normal"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/color_5C8CFF"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_content_lct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlyt_order_lct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/tv_content1_lct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填写申请"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_content2_lct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@+id/tv_content1_lct"
+            android:text="签署合同"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_content3_lct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_content2_lct"
+            android:text="提交成功"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
